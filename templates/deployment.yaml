@@ -16,6 +16,8 @@ spec:
       containers:
         - image: {{ .Values.IMAGE.NAME }}:{{ .Values.IMAGE.TAG }}
           name: mysql
+          args:
+          - "--ignore-db-dir=lost+found"
           env:
             - name: MYSQL_ROOT_PASSWORD
               value: {{ .Values.MYSQL_ROOT_PASSWORD }}
