@@ -6,3 +6,5 @@ IMAGE:
 MYSQL_ROOT_PASSWORD: root
 
 STORAGE_SIZE: 10Gi
+
+INIT_DB_NAME: dev_ais_staging
